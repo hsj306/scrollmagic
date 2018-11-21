@@ -209,7 +209,7 @@
 	]);
 
 	/* resize할 때 이벤트 */
-	// $(document).ready(function(){
+	$(document).ready(function(){
 
 		function resizeDone(){
 			var width = window.innerWidth;
@@ -222,16 +222,14 @@
 			}	
 		}
 		
-		// $(window).on('resize', function(){
-		// 	clearTimeout(timer);
-		// 	var timer = setTimeout(resizeDone, 150);
-		// });
+		resizeDone();
+
 		$(window).resize(function(){
-			//resizeDone();
-			 clearTimeout(timer);
-			 var timer = setTimeout(resizeDone, 150);
+			clearTimeout(timer);
+			var timer = setTimeout(resizeDone, 150);
 		})
-	// });
+		
+	});
 
 
 </script>
@@ -242,7 +240,7 @@
 <!-- [참고 url] 
 
 	ie9-11(o) / chrome(o)
-	
+
 	※창 넓이 줄였을때 trigger위치 재설정 해보기
 
 	모바일 크기로 줄이면 공백생김 → head에 meata태그 추가 해서 해결
