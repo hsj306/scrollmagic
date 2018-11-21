@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>scrollmagic 예제</title>
+
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+   
+<meta name="format-detection" content="telephone=no" /> 
+
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/181120.css">
+ 
+<!-- scrollMagic CDN -->
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.0/TweenMax.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/plugins/debug.addIndicators.min.js'></script>
+<!-- //scrollMagic CDN -->
+
+</head>
+<body>
+
+	<div class="header">
+		header영역
+	</div><!-- header -->
+
+	<div class="container">
+		<div class="main_top">
+			<div id="mainVisual" class="main_visual"></div>
+			<div id="mainTxt" class="main_txt">
+				Integrity,<br>Excellence<br>Progress.
+			</div>
+		</div><!-- //main_top -->
+		<div class="wrap">
+			<div id="sec1" class="sec sec1">
+				<div class="sec_img"></div>
+				<div class="sec_txt">
+					<h3>Smith & Jones Architects</h3>
+					<p>Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem</p>
+					<a href="javascript:void(0);">Learn More</a>
+				</div>
+			</div>
+
+			<div id="sec2" class="sec sec2">
+				<div class="sec_img"></div>
+				<div class="sec_txt">
+					<h3>Futuristic Designs</h3>
+					<p>Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem</p>
+					<a href="javascript:void(0);">View Designs</a>
+				</div>
+			</div>
+
+			<div class="sec3">
+				<h3 id="projectTit">Recent Projects</h3>
+				<div class="project project1">
+					<div id="Villas" class="recent_img recent_img1">
+						<div id="project1" class="project_tit">THE VILLAS</div>
+					</div>
+					<div class="recent_txt">
+						The Villas bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.<br><br>
+						Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+					</div>
+				</div><!-- //project1 -->
+
+				<div class="project project2">
+					<div id="Outskirts" class="recent_img recent_img2">
+						<div id="project2" class="project_tit">OUTSKIRTS</div>
+					</div>
+					<div class="recent_txt">
+						The Outskirts are amazing to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.<br><br>
+						Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+					</div>
+				</div><!-- //project2 -->
+
+				<div class="project project3">
+					<div id="Blocks" class="recent_img recent_img3">
+						<div id="project3" class="project_tit">THE BLOCKS</div>
+					</div>
+					<div class="recent_txt">
+						The Blocks are amazing to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.
+						<br><br>
+						Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+					</div>
+				</div><!-- //project3 -->
+			</div>
+		</div><!-- //wrap -->
+
+		<div class="footer">
+			<div class="footer_wrap">
+				<div class="email">
+					<h4>Interested in starting a project?<br>Let's talk:</h4>
+					<input placeholder="Email here">
+					<p>We'll never share your email with anyone else.</p>
+				</div>
+
+				<div class="address">
+					<div class="newyork">
+						<h3>New York</h3>
+						<ul>
+							<li>123 Lane</li>
+							<li>Suite 100</li>
+							<li>Albany, NY 12345</li>
+							<li>202 555 0144</li>
+						</ul>
+					</div>
+					<div class="Florida">
+						<h3>Florida</h3>
+						<ul>
+							<li>Ocean Drive</li>
+							<li>Suite 201</li>
+							<li>Orlando, FL 22345</li>
+							<li>502 555 0144</li>
+						</ul>
+					</div>
+					<div class="california">
+						<h3>California</h3>
+						<ul>
+							<li>Mountain Street</li>
+							<li>Suite 105</li>
+							<li>San Diego, CA 22345</li>
+							<li>702 5550144</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="copyright">Copyright ⓒ2018 Smith and Jones</div>
+			</div>
+		</div><!-- //footer -->
+	</div><!-- //container -->
+
+<script type="text/javascript">
+	//Page Load Effect --------------------------------------------------------
+	TweenMax.from('#mainVisual', 1, {autoAlpha:0, y:-200, ease:Circ.easOut});
+	TweenMax.from('#mainTxt', 1, {autoAlpha:0, y:300, ease:Circ.easeOut});
+
+	//Page Scroll Animations --------------------------------------------------
+	var tween1 = TweenMax.from('#sec1', .8, {autoAlpha:0, x:-200, ease:Circ.easeOut,});
+	var tween2 = TweenMax.from('#sec2', .8, {autoAlpha:0, x:200, ease:Circ.easeOut,});
+	var tween3 = TweenMax.from('#projectTit', .8, {autoAlpha:0, x:-50, ease:Circ.easeOut,});
+	var tween4 = TweenMax.from('#Villas', .8, {autoAlpha:0, x:-100, ease:Circ.easeOut,});
+	var tween5 = TweenMax.from('#project1', .8, {autoAlpha:0, x:50, ease:Circ.easeOut,});
+	var tween6 = TweenMax.from('#Outskirts', .8, {autoAlpha:0, x:100, ease:Circ.easeOut,});
+	var tween7 = TweenMax.from('#project2', .8, {autoAlpha:0, x:-50, ease: Circ.easeOut,});
+	var tween8 = TweenMax.from('#Blocks', .8, {autoAlpha:0, x:-100, ease: Circ.easeOut,});
+	var tween9 = TweenMax.from('#project3', .8, {autoAlpha:0, x:50, ease: Circ.easeOut,});
+
+	//init ScrollMagic Controller
+	var controller = new ScrollMagic.Controller();
+
+	var scene1 = new ScrollMagic.Scene({
+		triggerElement:'#mainTxt',
+		offset:500
+	}).setTween(tween1).addIndicators();
+
+	var scene2 = new ScrollMagic.Scene({
+		triggerElement:'#sec1',
+		offset:150
+	}).setTween(tween2).addIndicators();
+
+	var scene3 = new ScrollMagic.Scene({
+		triggerElement:'#sec2',
+		offset:120
+	}).setTween(tween3).addIndicators();
+
+	var scene4 = new ScrollMagic.Scene({
+		triggerElement: '#projectTit'
+	}).setTween(tween4).addIndicators();
+
+	var scene5 = new ScrollMagic.Scene({
+		triggerElement: '#projectTit'
+	}).setTween(tween5).addIndicators();
+
+	var scene6 = new ScrollMagic.Scene({
+		triggerElement: '#project1',
+		offset: 400,
+	}).setTween(tween6).addIndicators();
+
+	var scene7 = new ScrollMagic.Scene({
+		triggerElement: '#project1',
+		offset: 400
+	}).setTween(tween7).addIndicators(); //scene6과 다름
+
+	var scene8 = new ScrollMagic.Scene({
+		triggerElement: '#project2',
+		offset: 390,
+	}).setTween(tween8).addIndicators();
+
+	var scene9 = new ScrollMagic.Scene({
+		triggerElement: '#project2',
+		offset: 390
+	}).setTween(tween9).addIndicators(); //scene8과 다름
+
+	controller.addScene([
+		scene1,
+		scene2,
+		scene3,
+		scene4,
+		scene5,
+		scene6,
+		scene7,
+		scene8,
+		scene9
+	]);
+
+	/* resize할 때 이벤트 */
+	// $(document).ready(function(){
+
+		function resizeDone(){
+			var width = window.innerWidth;
+			if(width <= 500){
+				console.log('500이하입니다');
+				$('.sec_txt').addClass('test');
+			} else if(width > 500){
+				$('.sec_txt').removeClass('test');
+				console.log('500이상입니다');
+			}	
+		}
+		
+		// $(window).on('resize', function(){
+		// 	clearTimeout(timer);
+		// 	var timer = setTimeout(resizeDone, 150);
+		// });
+		$(window).resize(function(){
+			//resizeDone();
+			 clearTimeout(timer);
+			 var timer = setTimeout(resizeDone, 150);
+		})
+	// });
+
+
+</script>
+
+</body>
+</html>
+
+<!-- [참고 url] 
+
+	ie9-11(o) / chrome(o)
+	
+	※창 넓이 줄였을때 trigger위치 재설정 해보기
+
+	모바일 크기로 줄이면 공백생김 → head에 meata태그 추가 해서 해결
+
+https://cocky-aryabhata-49ebc3.netlify.com/
+-->

@@ -1,0 +1,87 @@
+@charset "UTF-8";
+body{overflow-x: hidden;}
+
+.header{width: 100%; height: 44px; background: #99a4af; position: fixed; z-index: 1;}
+
+.main_top{position: relative; width: 100%; max-width: 1024px; margin: 0 auto;}
+.main_top .main_visual{background: url('../images/home-jumbotron.png') no-repeat center center; height: 598px;}
+.main_top .main_txt{position: absolute; top: 325px; left: 8%; font-size: 64px; color: #fff; font-weight: bolder; line-height: 120%;}
+
+.wrap{width: 100%; max-width: 855px; margin: 0 auto;}
+.sec{position: relative; height: 274px; margin-top: 52px;}
+.sec > div{position: absolute;}
+.sec .sec_img{background: url('../images/home-img-1.png') no-repeat center center; width: 48%; height: 100%; top: 0; left: 0;}
+.sec .sec_txt{width: 49%; top: 50%; right: 0; transform: translateY(-50%);}
+.sec2 .sec_img{background: url('../images/home-img-2.png') no-repeat center center; left: auto; right: 0;}
+.sec2 .sec_txt{left: 0; right: auto;}
+.sec .sec_txt h3{font-size: 28px; font-weight: bolder; letter-spacing: -0.5px;}
+.sec .sec_txt p{font-size: 16px; padding: 28px 0; line-height: 140%;}
+.sec .sec_txt a{display: inline-block; border: 1px solid #222; font-size: 16px; padding:13px 27px; transition: all 0.3s ease;}
+.sec .sec_txt a:hover{background: #222; color: #fff;}
+
+.sec3{margin-top: 95px;}
+.sec3 h3{font-size: 28px; font-weight: bolder; letter-spacing: -0.5px;}
+.sec3 .project{margin-top: 44px;}
+.sec3 .project .recent_img{
+    position: relative; 
+    background: url('../images/home-villas-img.png') no-repeat center center; 
+    height: 230px; 
+    width: 100%;
+}
+.sec3 .project2 .recent_img{background: url('../images/home-outskirts-img.png') no-repeat center center; }
+.sec3 .project3 .recent_img{background: url('../images/home-the-blocks-img.png') no-repeat center center; }
+
+.sec3 .project .recent_img .project_tit{
+    position: absolute; 
+    bottom: -48px; 
+    right: 0;
+    background: #d8d8d8;
+    border: 0.5px solid #fff;
+    z-index: 2;
+    letter-spacing: 6px;
+    text-align: center;
+    padding: 35px 62px;
+    font-size: 25px;
+}
+.sec3 .project2 .recent_img .project_tit{right: auto; left: 0;}
+.sec3 .project .recent_txt{font-size: 18px; width: 52%; margin: 0 auto; line-height: 140%; margin-top: 83px; letter-spacing: -0.5px;}
+
+
+.footer{background: #828282; margin-top: 100px;}
+.footer .footer_wrap{width: 100%; max-width: 852px; margin: 0 auto; overflow: hidden; padding-top: 63px;}
+.footer_wrap > div{float: left; width: 40%; box-sizing: border-box;}
+.footer_wrap > .email > h4{font-size: 20px; color: #fff; font-weight: bolder; letter-spacing: -0.5px;}
+.footer_wrap > .email > p{font-size: 14px; color: #fff; line-height: 26px;}
+.footer_wrap > .email input{margin-top: 12px; padding: 12px 6px; width: 90%; border-radius: 5px; box-sizing: border-box;}
+.footer_wrap > .address{overflow: hidden; color: #fff; width: 60%;}
+.footer_wrap .address > div{float: left; width: 33.3333%;}
+.footer_wrap .address h3{font-size: 20px;}
+.footer_wrap .address ul li{font-size: 14px; line-height: 26px;}
+.footer_wrap > .copyright{
+    margin-top: 28px; 
+    font-size: 12px; 
+    text-align: center; 
+    color: #fff;
+    display: block;
+    width: 100%;
+    margin-bottom: 26px;
+}
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media only screen and (max-width: 768px) {
+    .wrap{max-width: 500px;}
+    .sec .sec_img{width: 100%;}
+    .sec .sec_txt{width: 100%; top: 290px; transform: none; max-width: 400px; right: auto; left: 50%; transform: translateX(-50%); padding: 0 0; transition: all 0.3s ease;}
+    .sec .test{border: 1px solid red; padding: 0 40px; box-sizing: border-box;}
+    .sec2{margin-top: 272px;}
+    .sec .sec_txt a{width: 100%; text-align: center; box-sizing: border-box;}
+
+    .sec3{margin-top: 322px; max-width: 500px;}
+    .sec3 h3{text-align: center;}
+    .sec3 .project .recent_txt{width: 72%;}
+
+}
